@@ -18,7 +18,10 @@ using namespace std;
 
 int Solution::uniquePaths(int m, int n)
 {
-  /* number of unique paths arriving at (i,j) */
+  /* number of unique paths arriving at (i,j)
+     - add an additional row and column to simplify
+       the logic
+  */
   auto dp = vector<vector<int>>(m + 1, vector<int>(n + 1, 0));
 
   /* initial condition */
